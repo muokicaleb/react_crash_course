@@ -109,3 +109,35 @@ let q = {
     age:20
 }
 fullName(q)
+
+// classes
+
+class Employee {
+    employeeName: string;
+    constructor(name: string) {
+        this.employeeName = name;
+    }
+
+    greet(){
+        console.log(`Good Morning ${this.employeeName}`);
+    }
+}
+
+let emp1 = new Employee("john");
+
+console.log(emp1.employeeName);
+emp1.greet();
+
+class Manager extends Employee {
+    constructor(mangerName: string) {
+        super(mangerName);
+    }
+    delegateWork(){
+        console.log(`Manager delegating tasks`);
+    }
+}
+
+let m1 = new Manager('Bruce');
+m1.delegateWork();
+m1.greet();
+console.log(m1.employeeName);
