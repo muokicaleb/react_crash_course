@@ -65,3 +65,24 @@ let multiType: number | boolean;
 
 multiType = 20;
 multiType = true;
+
+// Functions
+// all params required
+function add(num1: number, num2: number): number{
+    return num1 + num2;
+}
+
+console.log(add(5,10));
+
+// Functions
+// all params not required
+function add2(num1: number, num2?: number): number{
+    if (num2)
+      return num1 + num2;
+    else
+      return num1
+}
+
+console.log(add2(5,10));
+console.log(add2(5));
+
