@@ -86,3 +86,26 @@ function add2(num1: number, num2?: number): number{
 console.log(add2(5,10));
 console.log(add2(5));
 
+// Interfaces
+
+interface Person{
+    firstName: string;
+    lastName: string;
+    age?: number;
+}
+
+function fullName(person: Person){
+    console.log(`${person.firstName} ${person.lastName} `);
+}
+
+let p = {
+    firstName: 'Bruce',
+    lastName: 'wayne'
+}
+fullName(p)
+let q = {
+    firstName: 'Mark',
+    lastName: 'Mende',
+    age:20
+}
+fullName(q)

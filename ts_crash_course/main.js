@@ -65,3 +65,17 @@ function add2(num1, num2) {
 }
 console.log(add2(5, 10));
 console.log(add2(5));
+function fullName(person) {
+    console.log("".concat(person.firstName, " ").concat(person.lastName, " "));
+}
+var p = {
+    firstName: 'Bruce',
+    lastName: 'wayne'
+};
+fullName(p);
+var q = {
+    firstName: 'Mark',
+    lastName: 'Mende',
+    age: 20
+};
+fullName(q);
